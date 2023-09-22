@@ -32,14 +32,28 @@ module.exports = function (config) {
 
     webpack: {
       devtool: 'inline-source-map',
+      mode: process.env.NODE_ENV,
       module: {
-        loaders: [
-          { test: /\.js$/, exclude: /node_modules/, loader: 'babel' }
-        ]
+        rules: [
+          // JavaScript
+          {
+            test: /\.js$/,
+            exclude: /node_modules/,
+            use: {
+              loader: 'babel-loader',
+              options: {
+                presets: [
+                  ['@babel/preset-env', { targets: "ie 11, not ie_mob 11" }]
+                ],
+                plugins: ['@babel/plugin-transform-class-properties']
+              }
+            }
+          },
+        ],
       },
       plugins: [
         new webpack.DefinePlugin({
-          'process.env.NODE_ENV': JSON.stringify('test')
+          'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
         })
       ]
     },

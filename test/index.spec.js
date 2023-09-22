@@ -27,7 +27,7 @@ function checkScriptLoaded (getComponent, done) {
 }
 
 describe('Test this module', _ => {
-  it('[react-async-script-loader] Load external script after component mounted',
+  it('[react-script-loader-hoc] Load external script after component mounted',
     function (done) {
       const deps = [ 'https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js' ]
       const com = renderTestComponent(deps, onScriptLoaded)
@@ -53,7 +53,7 @@ describe('Test this module', _ => {
     }
   )
 
-  it('[react-async-script-loader] No redundant script tag will be appended',
+  it('[react-script-loader-hoc] No redundant script tag will be appended',
     function (done) {
       const deps = [ '//cdn.bootcss.com/jquery/2.1.1/jquery.min.js' ]
       const com0 = renderTestComponent(deps, checkScriptLoaded(_ => com0, checkAllDone))
