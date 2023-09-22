@@ -1,7 +1,7 @@
-# react-script-loader-hoc
+# react-script-loader
 
-A decorator for script lazy loading on react component.
-
+A HOC for script lazy loading on react component.
+Forked from [leozdgao/react-async-script-loader](https://github.com/leozdgao/react-async-script-loader)
 ## Description
 
 Some component may depend on other vendors which you may not want to load them until you really need them. So here it is, use **High Order Component** to decorate your component and it will handle lazy loading for you, it support parallel and sequential loading.
@@ -9,7 +9,7 @@ Some component may depend on other vendors which you may not want to load them u
 ## Installation
 
 ```bash
-npm install --save react-script-loader-hoc
+npm install --save @kevinkl3/react-script-loader
 ```
 
 ## API
@@ -36,7 +36,7 @@ You can use it to decorate your component.
 
 ```javascript
 import React, { Component } from 'react'
-import scriptLoader from 'react-script-loader-hoc'
+import scriptLoader from '@kevinkl3/react-script-loader'
 
 class Editor extends Component {
   ...

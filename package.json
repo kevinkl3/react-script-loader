@@ -1,5 +1,5 @@
 {
-  "name": "react-script-loader-hoc",
+  "name": "@kevinkl3/react-script-loader",
   "version": "0.3.0",
   "description": "A decorator for script lazy loading on react component",
   "main": "lib/index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kevinkl3/react-script-loader-hoc.git"
+    "url": "git+https://github.com/kevinkl3/react-script-loader.git"
   },
   "keywords": [
     "react",
@@ -21,9 +21,9 @@
   "author": "leozdgao",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kevinkl3/react-script-loader-hoc/issues"
+    "url": "https://github.com/kevinkl3/react-script-loader/issues"
   },
-  "homepage": "https://github.com/kevinkl3/react-script-loader-hoc#readme",
+  "homepage": "https://github.com/kevinkl3/react-script-loader#readme",
   "peerDependencies": {
     "react": "^16.0.0 || ^17.0.2 || ^18.2.0"
   },

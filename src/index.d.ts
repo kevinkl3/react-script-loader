@@ -1,4 +1,4 @@
-declare module 'react-script-loader-hoc' {
+declare module '@kevinkl3/react-script-loader' {
     type scriptType = string | string[];
   
     type scriptLoaderType = (...args: scriptType[]) => scriptLoaderHOC;
